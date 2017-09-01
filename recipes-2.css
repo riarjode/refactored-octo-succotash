@@ -1,0 +1,103 @@
+body {
+  font-family: 'Acme', serif;
+  font-weight: 700;
+  background: azure;
+}
+
+img {
+  width: 100%;
+}
+
+.nav-bar li {
+  list-style-type: none;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.title-home {
+  text-decoration: none;
+  color: black;
+  font-size: 2em;
+}
+
+.header {
+  background: coral;
+  border: 5px outset coral;
+  text-align: center;
+}
+
+.recipe-title {
+  background: lightgreen;
+  border: 5px outset lightgreen;
+  text-align: center;
+}
+
+.ingredients {
+  background: navajowhite;
+  border: 5px outset navajowhite;
+}
+
+.ingredients-list {
+  list-style-position: inside;
+  list-style-type: square;
+}
+
+.nav {
+  background: gold;
+  border: 5px outset gold;
+  font-size: 1.5em;
+}
+
+.notes {
+  background: darkorange;
+  border: 5px outset darkorange;
+}
+
+.footer {
+  background: lightpink;
+  border: 5px outset lightpink;
+}
+
+.wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: baseline;
+}
+
+.wrapper > * {
+  flex: 1 100%;
+  margin: .5em;
+  padding: .25em;
+}
+
+.nav-bar {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  padding: 0;
+}
+
+.method {
+  background: mediumturquoise;
+  border: 5px outset mediumturquoise;
+}
+
+.footer {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  padding: 1em;
+}
+
+@media all and (min-width: 800px) {
+  .ingredients, .notes {
+    flex: 1 0;
+  }
+  .method {
+    flex: 2 0;
+  }
+}
